@@ -1,0 +1,87 @@
+<html>
+
+<head>
+	<title>CS475 Assignment 4</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css">
+</head>
+
+<body>
+	<h3 class="text-center"><u>Toys - Animation</u></h3>
+
+	<div class="container">
+		<h4>Youtube Video Link:</h4>
+		<a href="https://youtu.be/4Dhrb4JOY4w">https://youtu.be/4Dhrb4JOY4w</a>
+	</div>
+	
+	<div class="container">
+		<h4>Features and Instructions:</h4>
+		<ul>
+			<li><h5>Run the Makefile using <code>make</code> command, to get the executable "Assignment4".</h5></li>
+			<li><h5>Using the command <code>./Assignment4</code> a window appears where we can see a Humanoid and Non-Humanoid toys in an environment.</h5></li>
+			<li><h5>The time interval between two succesive key frames is by default 1 second. Instead of using default 1 second we can also input the time difference between successive frames by toggling "T".</h5></li>
+			<li><h5>The saved keyframes can be played back using "space" key.</h5></li>
+			<li><h5>Using the command <code>./save_video.sh</code> the video can be generated after the frames are captured(audio.mp3 should be present for music).</h5></li>
+		</ul>
+		<h4>Bonus: Bezier Interpolation</h4>
+		<ul>
+			<li><h5>The last few seconds(7 sec) of the video we used Bezier curve interpolation for the camera position.</h5></li>
+		</ul>
+	</div>
+	<div class="container">
+		<h4>KeyBoard Instructions:</h4>
+		<ul>
+			<li><h5>"G" - Saves the frame into keyframes.txt.</h5></li>
+			<li><h5>"T" - Toggles the option to input time between succesive keyframes.</h5></li>
+			<li><h5>"space" - Plays the animation from the start.</h5></li>
+			<li><h5>"Y" - Toggles the option to capture the frames.</h5></li>
+			<li><h5>"P" - Changes Perspective view.</h5></li>
+			<li><h5>The keys "D, A, S, W, E, Q" allow rotations along the positive and negative Y, X and Z axis respectively of the camera.</h5></li>
+			<li><h5>The key "R" helps to nullify all the applied rotations to the camera (for convenience).</h5></li>
+			<li><h5>"H" - Changes the selected model for applying transformations from Humanoid to Non-Humanoid or vice-versa. Initially the selected model is Humanoid.</h5></li>
+			<li><h5>"+/-" - For zoom in/zoom out.</h5></li>
+			<li><h5>"B" - Turns on/off directional light 1.</h5></li>
+			<li><h5>"N" - Turns on/off directional light 2.</h5></li>
+			<li><h5>"M" - Turns on/off spot-light.</h5></li>
+			<li>
+				<h5><b>Keys specific to Humanoid</b></h5>
+				<ul>
+					<li><h5>"0" - selects body</h5></li>
+					<li><h5>"1" - selects neck</h5></li>
+					<li><h5>"2" - selects right hand</h5></li>
+					<li><h5>"3" - selects right elbow</h5></li>
+					<li><h5>"4" - selects left hand</h5></li>
+					<li><h5>"5" - selects left elbow</h5></li>
+					<li><h5>"6" - selects right leg</h5></li>
+					<li><h5>"7" - selects right knee</h5></li>
+					<li><h5>"8" - selects left leg</h5></li>
+					<li><h5>"9" - selects left knee</h5></li>
+				</ul>
+			</li>
+			<li>
+				<h5><b>Keys specific to Non-Humanoid</b></h5>
+				<ul>
+					<li><h5>"0" - selects body</h5></li>
+					<li><h5>"1" - selects neck</h5></li>
+					<li><h5>"2" - selects right front leg</h5></li>
+					<li><h5>"4" - selects left front leg</h5></li>
+					<li><h5>"6" - selects right back leg</h5></li>
+					<li><h5>"8" - selects left back leg</h5></li>
+				</ul>
+			</li>
+			<li><h5>The "left/right arrows" allows the selected specific part of the model to rotate about the Y-axis, the "up/down arrows" allows rotation about the X-axis, and "PgUp/PgDn" allows rotation about the Z-axis.</h5></li>
+			<li><h5>The keys "I, K, L, J, O, U" allows translations along the positive and negative Y, X and Z axis respectively of the selected toy.</h5></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<h4>References:</h4>
+		<ul>
+			<li><h5>The base code for the assignment is taken directly from the tutorials given. <a href="https://github.com/paragchaudhuri/cs475-tutorials">https://github.com/paragchaudhuri/cs475-tutorials</a></h5></li>
+			<li><h5><a href="https://www.cse.iitb.ac.in/~paragc/teaching/2017/cs475/demonotes.shtml">Link</a> used for capturing frames.</h5></li>
+			<li><h5><a href="http://mp3pn.info/song/64975022/Alan_Walker_-_Faded_music_only/">Link</a> to background music.</h5></li>
+		</ul>
+	</div>
+</body>
+
+</html>
